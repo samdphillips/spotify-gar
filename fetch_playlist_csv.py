@@ -57,7 +57,6 @@ class TrackFetcher:
 
 user_id, playlist_id, token = sys.argv[1:]
 t = TrackFetcher(user_id, playlist_id, token)
-# with open('playlist.csv', 'w') as outfile:
 w = csv.DictWriter(sys.stdout, 'album artist name'.split())
 w.writeheader()
 w.writerows(t)
